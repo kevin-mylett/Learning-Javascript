@@ -1,0 +1,34 @@
+var person = {};
+person.kevin = {
+	fname: "Kevin",
+	lname: "Mylett",
+	age: 31
+};
+person.emily = {
+	fname: "Emily",
+	lname: "Goulding",
+	age: 28
+};
+person.pippa = {
+	fname: "Pippa",
+	lname: "Taylor",
+	age: 34
+};
+
+var list = function (name) {
+	for (var prop in person){
+		console.log(person[prop].fname + " " + person[prop].lname);
+	}
+};
+
+var find = function (name) {
+	for (var prop in person) {
+		if (person[prop].fname == name) {
+			return (person[prop].fname + " " +person[prop].lname + " - " +person[prop].age);
+		}
+	}
+};
+
+
+list(person);
+find("Pippa");
