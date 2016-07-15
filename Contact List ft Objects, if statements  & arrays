@@ -1,3 +1,4 @@
+//Searchable contact List
 var person = {};
 person.kevin = {
 	fname: "Kevin",
